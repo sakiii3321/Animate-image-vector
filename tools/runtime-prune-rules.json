@@ -1,0 +1,1170 @@
+{
+  "schema_version": 1,
+  "scope": "Reviewed Windows portable runtime only; preview by default. Counts and sizes must still match before removal.",
+  "preserve": [
+    "runtime/potrace/node_modules/.pnpm",
+    "runtime/potrace/node_modules/potrace",
+    "runtime/potrace/node_modules/sharp",
+    "runtime/Lib/site-packages/scipy/special/tests",
+    "numpy.testing runtime helpers",
+    "all distribution metadata and licenses in retained packages",
+    "runtime/enhancement"
+  ],
+  "targets": [
+    {
+      "path": "runtime/potrace/node_modules/.ignored",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 18,
+      "bytes": 97283
+    },
+    {
+      "path": "runtime/potrace/node_modules/@babel",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 249,
+      "bytes": 247215
+    },
+    {
+      "path": "runtime/potrace/node_modules/@jimp",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 465,
+      "bytes": 6195311
+    },
+    {
+      "path": "runtime/potrace/node_modules/@types",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 54,
+      "bytes": 1633241
+    },
+    {
+      "path": "runtime/potrace/node_modules/any-base",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 7,
+      "bytes": 14049
+    },
+    {
+      "path": "runtime/potrace/node_modules/base64-js",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 6,
+      "bytes": 9624
+    },
+    {
+      "path": "runtime/potrace/node_modules/bmp-js",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 35,
+      "bytes": 645720
+    },
+    {
+      "path": "runtime/potrace/node_modules/buffer",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 6,
+      "bytes": 82527
+    },
+    {
+      "path": "runtime/potrace/node_modules/buffer-equal",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 6,
+      "bytes": 3026
+    },
+    {
+      "path": "runtime/potrace/node_modules/centra",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 6,
+      "bytes": 10384
+    },
+    {
+      "path": "runtime/potrace/node_modules/dom-walk",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 6,
+      "bytes": 2658
+    },
+    {
+      "path": "runtime/potrace/node_modules/exif-parser",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 25,
+      "bytes": 388763
+    },
+    {
+      "path": "runtime/potrace/node_modules/file-type",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 4,
+      "bytes": 26340
+    },
+    {
+      "path": "runtime/potrace/node_modules/follow-redirects",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 7,
+      "bytes": 32032
+    },
+    {
+      "path": "runtime/potrace/node_modules/gifwrap",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 64,
+      "bytes": 6342238
+    },
+    {
+      "path": "runtime/potrace/node_modules/global",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 8,
+      "bytes": 3468
+    },
+    {
+      "path": "runtime/potrace/node_modules/ieee754",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 5,
+      "bytes": 6796
+    },
+    {
+      "path": "runtime/potrace/node_modules/image-q",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 140,
+      "bytes": 845450
+    },
+    {
+      "path": "runtime/potrace/node_modules/is-function",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 5,
+      "bytes": 4304
+    },
+    {
+      "path": "runtime/potrace/node_modules/jimp",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 53,
+      "bytes": 3062035
+    },
+    {
+      "path": "runtime/potrace/node_modules/jpeg-js",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 9,
+      "bytes": 76029
+    },
+    {
+      "path": "runtime/potrace/node_modules/load-bmfont",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 13,
+      "bytes": 23684
+    },
+    {
+      "path": "runtime/potrace/node_modules/mime",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 10,
+      "bytes": 51738
+    },
+    {
+      "path": "runtime/potrace/node_modules/min-document",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 26,
+      "bytes": 54855
+    },
+    {
+      "path": "runtime/potrace/node_modules/minimist",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 24,
+      "bytes": 54477
+    },
+    {
+      "path": "runtime/potrace/node_modules/mkdirp",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 6,
+      "bytes": 7688
+    },
+    {
+      "path": "runtime/potrace/node_modules/omggif",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 5,
+      "bytes": 38509
+    },
+    {
+      "path": "runtime/potrace/node_modules/pako",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 27,
+      "bytes": 788283
+    },
+    {
+      "path": "runtime/potrace/node_modules/parse-bmfont-ascii",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 3,
+      "bytes": 5208
+    },
+    {
+      "path": "runtime/potrace/node_modules/parse-bmfont-binary",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 4,
+      "bytes": 7059
+    },
+    {
+      "path": "runtime/potrace/node_modules/parse-bmfont-xml",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 6,
+      "bytes": 8923
+    },
+    {
+      "path": "runtime/potrace/node_modules/parse-headers",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 8,
+      "bytes": 6902
+    },
+    {
+      "path": "runtime/potrace/node_modules/phin",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 4,
+      "bytes": 8081
+    },
+    {
+      "path": "runtime/potrace/node_modules/pixelmatch",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 22,
+      "bytes": 961580
+    },
+    {
+      "path": "runtime/potrace/node_modules/pngjs",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 28,
+      "bytes": 630270
+    },
+    {
+      "path": "runtime/potrace/node_modules/process",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 7,
+      "bytes": 15325
+    },
+    {
+      "path": "runtime/potrace/node_modules/regenerator-runtime",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 5,
+      "bytes": 27759
+    },
+    {
+      "path": "runtime/potrace/node_modules/sax",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 4,
+      "bytes": 61678
+    },
+    {
+      "path": "runtime/potrace/node_modules/timm",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 15,
+      "bytes": 64641
+    },
+    {
+      "path": "runtime/potrace/node_modules/tinycolor2",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 14,
+      "bytes": 284855
+    },
+    {
+      "path": "runtime/potrace/node_modules/utif",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 4,
+      "bytes": 57104
+    },
+    {
+      "path": "runtime/potrace/node_modules/xhr",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 7,
+      "bytes": 21464
+    },
+    {
+      "path": "runtime/potrace/node_modules/xml-parse-from-string",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 4,
+      "bytes": 3981
+    },
+    {
+      "path": "runtime/potrace/node_modules/xml2js",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 9,
+      "bytes": 44373
+    },
+    {
+      "path": "runtime/potrace/node_modules/xmlbuilder",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 45,
+      "bytes": 168433
+    },
+    {
+      "path": "runtime/potrace/node_modules/xtend",
+      "kind": "directory",
+      "category": "node-stale-copy",
+      "files": 7,
+      "bytes": 6465
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/mime",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 1450
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/mime.CMD",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 170
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/mime.ps1",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 769
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/mkdirp",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 1486
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/mkdirp.CMD",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 182
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/mkdirp.ps1",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 793
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/pixelmatch",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 1534
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/pixelmatch.CMD",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 198
+    },
+    {
+      "path": "runtime/potrace/node_modules/.bin/pixelmatch.ps1",
+      "kind": "file",
+      "category": "node-legacy-cli",
+      "files": 1,
+      "bytes": 825
+    },
+    {
+      "path": "runtime/Lib/site-packages/bin",
+      "kind": "directory",
+      "category": "third_party_cli_launchers",
+      "files": 8,
+      "bytes": 867058
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/approximation/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 15,
+      "bytes": 89733
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/assortativity/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 7,
+      "bytes": 27034
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/bipartite/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 15,
+      "bytes": 102704
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/centrality/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 21,
+      "bytes": 157159
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/coloring/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 23697
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/community/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 14,
+      "bytes": 86826
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/components/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 7,
+      "bytes": 24600
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/connectivity/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 9,
+      "bytes": 96481
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/flow/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 10,
+      "bytes": 256369
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/isomorphism/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 15,
+      "bytes": 215179
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/link_analysis/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 10597
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/minors/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 1,
+      "bytes": 17674
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/operators/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 37457
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/shortest_paths/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 7,
+      "bytes": 85102
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 58,
+      "bytes": 510468
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/traversal/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 6,
+      "bytes": 27660
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/algorithms/tree/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 8,
+      "bytes": 66111
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/classes/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 16,
+      "bytes": 234681
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/drawing/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 13,
+      "bytes": 397902
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/generators/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 29,
+      "bytes": 176148
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/linalg/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 8,
+      "bytes": 53389
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/readwrite/json_graph/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 9216
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/readwrite/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 12,
+      "bytes": 215321
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 11,
+      "bytes": 83913
+    },
+    {
+      "path": "runtime/Lib/site-packages/networkx/utils/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 11,
+      "bytes": 61857
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/_core/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 99,
+      "bytes": 3782678
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/_pyinstaller/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 2690
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/f2py/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 135,
+      "bytes": 240897
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/fft/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 32091
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/lib/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 33,
+      "bytes": 821867
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/linalg/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 4,
+      "bytes": 98602
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/ma/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 9,
+      "bytes": 396380
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/matrixlib/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 8,
+      "bytes": 41892
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/polynomial/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 11,
+      "bytes": 176650
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/random/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 25,
+      "bytes": 604715
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/testing/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 83788
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 12,
+      "bytes": 54813
+    },
+    {
+      "path": "runtime/Lib/site-packages/numpy/typing/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 149,
+      "bytes": 716731
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/_lib/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 15,
+      "bytes": 89633
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/cluster/hierarchy/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 4,
+      "bytes": 65002
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/cluster/vq/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 19531
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/constants/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 7262
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/datasets/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 4140
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/differentiate/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 28969
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/fft/_duccfft/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 54006
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/fft/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 8,
+      "bytes": 70769
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/fftpack/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 10,
+      "bytes": 638988
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/integrate/_ivp/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 46138
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/integrate/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 9,
+      "bytes": 213015
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/interpolate/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 17,
+      "bytes": 593792
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/io/_harwell_boeing/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 5561
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/io/arff/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 18,
+      "bytes": 224244
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/io/matlab/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 121,
+      "bytes": 142832
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/io/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 95,
+      "bytes": 445091
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/linalg/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 36,
+      "bytes": 1456378
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/ndimage/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 14,
+      "bytes": 447147
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/odr/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 23099
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/optimize/_trustregion_constr/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 6,
+      "bytes": 49928
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/optimize/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 48,
+      "bytes": 1041191
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/signal/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 25,
+      "bytes": 945714
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/sparse/csgraph/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 12,
+      "bytes": 78788
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/sparse/linalg/_dsolve/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 35379
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/sparse/linalg/_eigen/arpack/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 25809
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/sparse/linalg/_eigen/lobpcg/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 28197
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/sparse/linalg/_eigen/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 38046
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/sparse/linalg/_isolve/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 8,
+      "bytes": 63394
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/sparse/linalg/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 11,
+      "bytes": 742234
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/sparse/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 18,
+      "bytes": 478520
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/spatial/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 40,
+      "bytes": 2136733
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/spatial/transform/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 195399
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy/stats/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 65,
+      "bytes": 4645980
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/_loss/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 62362
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/callback/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 8,
+      "bytes": 71709
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/cluster/_hdbscan/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 2128
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/cluster/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 14,
+      "bytes": 208196
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/compose/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 117158
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/covariance/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 35556
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/cross_decomposition/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 24279
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/datasets/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 114,
+      "bytes": 303326
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/decomposition/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 11,
+      "bytes": 205673
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 10,
+      "bytes": 200676
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/ensemble/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 11,
+      "bytes": 283403
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/experimental/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 4,
+      "bytes": 4380
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/feature_extraction/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 83020
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/feature_selection/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 9,
+      "bytes": 116881
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/frozen/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 7326
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/gaussian_process/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 60498
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/impute/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 97628
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/inspection/_plot/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 77320
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/inspection/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 4,
+      "bytes": 64490
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/linear_model/_glm/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 2,
+      "bytes": 47702
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/linear_model/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 19,
+      "bytes": 562341
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/manifold/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 7,
+      "bytes": 89504
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/metrics/_plot/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 7,
+      "bytes": 102328
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/metrics/cluster/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 43890
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/metrics/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 9,
+      "bytes": 564798
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/mixture/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 4,
+      "bytes": 76156
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/model_selection/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 8,
+      "bytes": 357705
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/neighbors/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 12,
+      "bytes": 181268
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/neural_network/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 5,
+      "bytes": 52170
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/preprocessing/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 9,
+      "bytes": 358773
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/semi_supervised/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 3,
+      "bytes": 24349
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/svm/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 4,
+      "bytes": 76453
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 27,
+      "bytes": 605574
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/tree/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 8,
+      "bytes": 166660
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/utils/_repr_html/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 6,
+      "bytes": 51577
+    },
+    {
+      "path": "runtime/Lib/site-packages/sklearn/utils/tests",
+      "kind": "directory",
+      "category": "third_party_tests",
+      "files": 46,
+      "bytes": 604421
+    },
+    {
+      "path": "runtime/Lib/site-packages/cv2/opencv_videoio_ffmpeg500_64.dll",
+      "kind": "file",
+      "category": "unused-video-plugin",
+      "files": 1,
+      "bytes": 30876160
+    },
+    {
+      "path": "runtime/Lib/site-packages/scipy-1.18.1-cp314-cp314-win_amd64.whl",
+      "kind": "file",
+      "category": "empty-install-artifact",
+      "files": 1,
+      "bytes": 0
+    }
+  ]
+}

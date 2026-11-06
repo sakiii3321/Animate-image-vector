@@ -58,6 +58,7 @@ Node 依赖由 `runtime/potrace/pnpm-lock.yaml` 锁定。源码模式使用 PATH
 - [参数对照](参数对照.md)：参数含义与取舍。
 - [打包说明](PACKAGING_README.md)：如何组织另行制作的便携包。
 - [测试说明](tests/README.md)：测试依赖和环境要求。
+- [运行目录精简](PACKAGING_README.md#已审查的运行目录精简)：已核对的附带资源清理规则与验证记录。
 
 | 目录 | 内容 |
 | --- | --- |
