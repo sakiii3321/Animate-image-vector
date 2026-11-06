@@ -1,0 +1,95 @@
+{
+  "purpose": "Portable SVG validation renderer for optional flat_layers / gradient_layers illustration profiles",
+  "installed": "2026-11-06",
+  "platform": "win32-x64",
+  "package_manager": "pnpm 11.25.0",
+  "dependency_lock": "pnpm-lock.yaml",
+  "lock_sha256": "85d048404e5980a1e4798719024018bd38a8d569edaf3b5f4f242c213b4cf8b7",
+  "runtime_loading": "app/illustration_render.cjs resolves Sharp relative to the project; Node uses runtime/node/node.exe",
+  "runtime_links": "Package-manager links are relative paths inside runtime/potrace/node_modules.",
+  "sources": [
+    "https://github.com/lovell/sharp",
+    "https://github.com/lovell/sharp-libvips"
+  ],
+  "licenses": [
+    "node_modules/sharp/LICENSE",
+    "node_modules/.pnpm/@img+sharp-win32-x64@0.35.5/node_modules/@img/sharp-win32-x64/LICENSE"
+  ],
+  "packages": [
+    {
+      "package": "sharp",
+      "version": "0.35.5",
+      "registry": "https://registry.npmjs.org",
+      "npm_integrity": "sha512-Ywn4OnzGukp7CDMrp08RQ50YKmuwG47brZgIVPTvBaaAfQlRlygrRqSrxdCiL9M+LlzLBiJ68IR1QqvzHyjC7g==",
+      "license": "Apache-2.0",
+      "metadata_path": "node_modules/sharp/package.json"
+    },
+    {
+      "package": "@img/sharp-win32-x64",
+      "version": "0.35.5",
+      "registry": "https://registry.npmjs.org",
+      "npm_integrity": "sha512-x76eH0vEiHlcMQu8Y8IenntaACtddpT6W0wmXtWrnKcnKI7ME5DdgqhAD6SEWOEl1v2zDvkZDhFA9KnURwpfqg==",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "metadata_path": "node_modules/.pnpm/@img+sharp-win32-x64@0.35.5/node_modules/@img/sharp-win32-x64/package.json"
+    },
+    {
+      "package": "@img/colour",
+      "version": "1.1.0",
+      "registry": "https://registry.npmjs.org",
+      "npm_integrity": "sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==",
+      "license": "MIT",
+      "metadata_path": "node_modules/.pnpm/@img+colour@1.1.0/node_modules/@img/colour/package.json"
+    },
+    {
+      "package": "detect-libc",
+      "version": "2.1.2",
+      "registry": "https://registry.npmjs.org",
+      "npm_integrity": "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==",
+      "license": "Apache-2.0",
+      "metadata_path": "node_modules/.pnpm/detect-libc@2.1.2/node_modules/detect-libc/package.json"
+    },
+    {
+      "package": "semver",
+      "version": "7.8.6",
+      "registry": "https://registry.npmjs.org",
+      "npm_integrity": "sha512-9lpSSU4Mly3mrtruwLs1eLK6+gzbzqeBFwRNjIjE+9LuDpWdYctrQlQ3ej1Ilgi7gknpsTRnPoLP8DpCHqHIJw==",
+      "license": "ISC",
+      "metadata_path": "node_modules/.pnpm/semver@7.8.6/node_modules/semver/package.json"
+    }
+  ],
+  "bundled_native_versions": {
+    "aom": "3.15.1",
+    "archive": "3.8.9",
+    "cairo": "1.18.6",
+    "cgif": "0.5.4",
+    "exif": "0.6.26",
+    "expat": "2.8.5",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.17",
+    "glib": "2.90.0",
+    "harfbuzz": "14.5.0",
+    "heif": "1.23.5",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.63.2",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.7",
+    "webp": "1.6.0",
+    "xml2": "2.15.4",
+    "zlib-ng": "2.3.3"
+  },
+  "native_files": {
+    "node_modules/.pnpm/@img+sharp-win32-x64@0.35.5/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll": "06dab07cc386748513337a31672b1d5269fbc770a14ff403080575665bf0813f",
+    "node_modules/.pnpm/@img+sharp-win32-x64@0.35.5/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.7.dll": "25001dbd05305a0a29119ab49933622c70b4a20ea12ef1d5d20ca40181db53bf",
+    "node_modules/.pnpm/@img+sharp-win32-x64@0.35.5/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.5.node": "971048779f9c8598df14641dfc03c625885c93f473a788e65ca2deb50d0b083e"
+  }
+}

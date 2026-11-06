@@ -1,0 +1,11 @@
+{
+  "engine": "potrace",
+  "path_limit": 5000,
+  "sr_enabled": true,
+  "sr_scale": 2,
+  "curve_simplify": false,
+  "diffvg_optimize": false,
+  "highres_refine": false,
+  "output_directory": "",
+  "illustration_profile": "legacy"
+}

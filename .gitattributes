@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+*.pth binary
+*.pyd binary
+THIRD_PARTY_NOTICES/** -text -whitespace

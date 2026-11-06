@@ -1,0 +1,8 @@
+{
+  "name": "imagevector-tests",
+  "private": true,
+  "description": "Optional Node dependencies for ImageVector browser regressions",
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

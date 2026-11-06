@@ -1,0 +1,14 @@
+{
+  "engine": "potrace",
+  "path_limit": 5000,
+  "detail_region": "",
+  "sr_enabled": true,
+  "sr_scale": 2,
+  "curve_simplify": true,
+  "curve_tolerance": 0.3,
+  "diffvg_optimize": true,
+  "diffvg_iterations": 30,
+  "highres_refine": true,
+  "output_directory": "",
+  "illustration_profile": "legacy"
+}

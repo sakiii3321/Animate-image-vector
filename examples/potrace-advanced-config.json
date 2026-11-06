@@ -1,0 +1,17 @@
+{
+  "engine": "potrace",
+  "path_limit": 2500,
+  "detail_region": "",
+  "potrace_alpha_max": 1.0,
+  "potrace_opt_curve": true,
+  "potrace_opt_tolerance": 0.4,
+  "potrace_turn_policy": "minority",
+  "potrace_turd_size": 0,
+  "potrace_palette_colors": 48,
+  "potrace_smoothing": 1.0,
+  "potrace_min_region_area": 16,
+  "potrace_detail_weight": 15,
+  "potrace_stroke_width": 1.0,
+  "output_directory": "",
+  "illustration_profile": "legacy"
+}

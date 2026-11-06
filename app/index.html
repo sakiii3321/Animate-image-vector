@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ImageVector · 矢量工作台</title>
+  <link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/crop.css">
+  <script src="/crop.js" defer></script><script src="/refine.js" defer></script><script src="/presets.js" defer></script><script src="/app.js" defer></script>
+</head>
+<body>
+<main>
+  <header class="app-header">
+    <a class="brand" href="#" aria-label="ImageVector 矢量工作台"><svg class="brand-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="11" fill="currentColor"/><path d="M9 26C9 14 18 8 27 10C18 13 25 24 9 26Z" fill="#e4eee1"/><path d="M9 26 27 10" stroke="#fff" stroke-width="1.3"/><rect x="7" y="24" width="4" height="4" rx="1" fill="#fff"/><rect x="25" y="8" width="4" height="4" rx="1" fill="#fff"/></svg><span>ImageVector<small>矢量工作台</small></span></a>
+    <div class="local-badge"><span></span> 本机处理 · 图片不上传</div>
+  </header>
+  <div class="page-heading"><div><div class="eyebrow">YOUR IMAGE, IN VECTORS</div><h1>图片转 SVG</h1><p>从整体重构到局部精修，让每一处细节由你决定。</p></div><div class="workflow-note"><span>01 选择图片</span><i>→</i><span>02 选择方案</span><i>→</i><span>03 检查与精修</span></div></div>
+  <div class="layout">
+    <section class="settings card" aria-label="图片与转换设置">
+      <div class="settings-scroll">
+      <section class="setup-section source-section">
+        <div class="section-heading"><h2><span class="step-number">01</span> 选择图片</h2><span class="section-meta">从一张原图开始</span></div>
+        <label class="file"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="5" y="6" width="22" height="21" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="13" r="2" fill="currentColor"/><path d="m6 24 7-7 4 4 4-6 6 8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span><strong>打开本地图片</strong><small>PNG、JPG、WebP 等常见格式</small></span><span class="upload-plus">+</span><input id="file" type="file" accept=".png,.jpg,.jpeg,.webp,.bmp,.tif,.tiff,.gif" aria-label="打开本地图片"></label>
+        <div id="filename">尚未选择图片</div><p class="source-note">最大 20 MiB / 4000 万像素 · 保留透明背景</p>
+        <fieldset id="crop-settings" class="crop-summary-card" disabled>
+  <legend>裁剪范围</legend>
+  <div class="crop-summary-row">
+    <div><strong id="crop-summary">完整原图</strong><p id="crop-summary-detail">保留原始画布，或打开裁剪调整构图</p></div>
+    <button id="crop-open" type="button">编辑裁剪</button>
+  </div>
+  <input id="opt-crop_ratio" type="hidden" value="">
+  <input id="opt-crop_x" type="hidden" value="50">
+  <input id="opt-crop_y" type="hidden" value="50">
+  <input id="opt-crop_rect" type="hidden" value="">
+</fieldset>
+      </section>
+      <section class="setup-section preset-section">
+        <div class="section-heading"><h2><span class="step-number">02</span> 选择重构方案</h2><div class="advanced-toggle compact"><label for="advanced-mode"><span><strong>高级模式</strong></span><input id="advanced-mode" type="checkbox" role="switch" aria-controls="advanced-settings" title="展开颜色、曲线与增强参数"></label></div></div>
+        <div id="preset-grid" class="preset-grid" aria-label="预设配置"></div>
+        <div id="preset-summary" class="preset-summary" aria-live="polite">正在载入预设…</div>
+        <div id="advanced-settings" hidden>
+          <p class="hint advanced-intro">修改后显示为自定义配置；退出高级模式会保留你的设置。</p>
+          <form id="config"></form>
+          <p id="enhancement-status" class="hint runtime-status" aria-live="polite">正在检查增强功能运行环境…</p>
+          <p id="potrace-hint" class="hint">路径预算包括色块与补线。增加预算可以保留更多细节，也会增加耗时与文件大小。</p>
+          <div class="config-actions"><button id="reset" type="button">恢复默认</button><button id="save-config" type="button">导出配置</button><button id="load-config" type="button">导入配置</button><input id="config-file" type="file" accept=".json,application/json" hidden></div>
+        </div>
+      </section>
+      <section class="recommendation" aria-labelledby="recommendation-title">
+        <div class="recommendation-heading"><h3 id="recommendation-title"><span aria-hidden="true">✧</span> 图片分析与建议</h3><button id="analyze-image" type="button" disabled>重新分析</button></div>
+        <p id="recommendation-summary" aria-live="polite">选图后，根据清晰度、线条与色彩推荐方案。</p>
+        <button id="apply-recommendation" type="button" hidden disabled>采用建议</button>
+        <details class="analysis-details"><summary>分析依据</summary><ul id="recommendation-reasons" hidden></ul><p class="hint">分析当前裁剪范围；不会自动更改配置。</p></details>
+      </section>
+      <div id="output-settings"></div>
+      </div>
+      <div class="conversion-actions"><button id="convert" class="primary" disabled>转换为 SVG</button><button id="stop" type="button" hidden disabled>停止</button><p id="status" role="status" aria-live="polite">请选择一张图片。</p><progress id="conversion-progress" max="100" aria-label="当前处理阶段进度" hidden></progress><pre id="error" role="alert" hidden></pre><button id="self-test" type="button">检查本机转换引擎</button></div>
+    </section>
+    <section class="results" aria-label="预览与输出">
+      <div id="comparison-card" class="card comparison-card">
+        <div class="preview-title"><div><div class="eyebrow">03 / WORKSPACE</div><h2>检查每一处细节</h2></div><label class="reference-control">参考图<select id="preview-reference" disabled><option value="original">原图</option><option value="processed">预处理图</option></select></label></div>
+        <div class="preview-toolbar" aria-label="预览工具栏"><div class="zoom-group"><button id="zoom-out" data-preview disabled aria-label="缩小">−</button><output id="zoom-value" aria-live="polite">100%</output><button id="zoom-in" data-preview disabled aria-label="放大">+</button><button id="fit" data-preview disabled>适应画布</button><button id="actual" data-preview disabled>1:1</button></div><button id="fullscreen" data-preview disabled>⛶ 全屏</button><button id="change-image">换一张图</button><label class="background-control"><span class="sr-only">预览背景</span><select id="background"><option value="checker">透明背景</option><option value="white">白色背景</option><option value="dark">深色背景</option></select></label><button id="download-preview" class="accent" disabled>↓ 下载 SVG</button></div>
+        <section id="refine-panel" class="refine-panel" aria-labelledby="refine-title" hidden>
+          <div class="refine-heading"><h3 id="refine-title">局部精修</h3><span class="hint">圈选遗漏细节，比较后再采用</span></div>
+          <div class="refine-controls"><button id="refine-draw" type="button" aria-pressed="false">圈画区域</button><button id="refine-clear" type="button" disabled>清除圈选</button><label>局部路径预算<input id="refine-budget" type="number" min="50" max="1500" step="1" value="300"></label><label>细节强度<select id="refine-detail"><option value="standard">标准</option><option value="fine">更精细</option></select></label><button id="refine-generate" type="button" disabled>生成候选</button><button id="refine-undo" type="button" disabled>撤销上次采用</button></div>
+          <div id="refine-candidate-actions" class="refine-candidate-actions" hidden><span>预览：</span><button id="refine-current" type="button" aria-pressed="true">原结果</button><button id="refine-candidate" type="button" aria-pressed="false">候选（未采用）</button><button id="refine-accept" type="button">采用并保存新 SVG</button><button id="refine-discard" type="button">放弃候选</button></div><button id="refine-retry-preview" type="button" hidden>重试预览</button><p id="refine-status" role="status" aria-live="polite">先放大需要修改的位置，再点击“圈画区域”。</p>
+        </section>
+        <div id="viewport" class="viewport" data-background="checker" tabindex="0" aria-label="对比画布：滚轮缩放，拖动画布平移">
+          <div id="original-layer" class="image-layer"><img id="original" alt="原始位图" draggable="false" hidden></div><div id="vector-layer" class="image-layer"><img id="vector" alt="转换后的 SVG" draggable="false" hidden></div>
+          <div id="preview-empty"><svg class="empty-art" viewBox="0 0 240 180" fill="none" aria-hidden="true"><rect x="32" y="22" width="176" height="136" rx="14" fill="#eaf0eb"/><path d="M32 56h176M32 90h176M32 124h176M76 22v136M120 22v136M164 22v136" stroke="#dce6de"/><path d="M57 132C78 128 78 58 120 48C160 38 170 81 183 111C150 140 97 140 57 132Z" fill="#bdd5c4"/><path d="M57 132C97 141 130 121 145 91C160 61 147 37 120 48" stroke="#32705e" stroke-width="2.5"/><path d="m57 132 42 9m46-50 21-43m-46 0 27-11" stroke="#74a48b"/><circle cx="99" cy="141" r="3" fill="#fff" stroke="#74a48b"/><circle cx="166" cy="48" r="3" fill="#fff" stroke="#74a48b"/><circle cx="147" cy="37" r="3" fill="#fff" stroke="#74a48b"/><rect x="53" y="128" width="8" height="8" rx="1" fill="white" stroke="#32705e" stroke-width="2"/><rect x="141" y="87" width="8" height="8" rx="1" fill="white" stroke="#32705e" stroke-width="2"/><rect x="116" y="44" width="8" height="8" rx="1" fill="white" stroke="#32705e" stroke-width="2"/></svg><strong id="original-empty">让画面，拥有清晰的轮廓</strong><span id="vector-empty">打开图片并选择方案，在这里对比原图与矢量结果</span><div class="empty-steps"><span>比例裁剪</span><span>矢量重构</span><span>圈画精修</span></div></div>
+          <div id="split" role="slider" aria-label="原图与矢量分界位置" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-orientation="horizontal" aria-disabled="true" tabindex="-1" hidden><span class="split-handle">‹ ›</span></div><svg id="refine-overlay" aria-label="局部精修圈选画布" hidden><path id="refine-outline"></path></svg><span id="refine-candidate-badge" class="refine-candidate-badge" hidden>候选预览 · 尚未采用 · 下载仍为原结果</span><span id="original-tag" class="image-tag" hidden>原始</span><span id="vector-tag" class="image-tag right" hidden>矢量</span>
+        </div>
+        <div class="preview-footer"><span id="dimensions">等待图片</span><span>滚轮缩放 · 拖动平移 · 滑杆对比</span></div>
+      </div>
+      <div class="card output"><div class="output-heading"><div><div class="eyebrow">EXPORT</div><h2>你的矢量作品</h2></div><button id="download" disabled>另存 SVG 副本 ↗</button></div><p id="output-path">转换成功后自动保存，不覆盖已有文件。</p><p id="result-stats" class="hint" aria-live="polite"></p><p id="pipeline-stats" class="hint"></p><details class="output-details"><summary>保存说明</summary><p class="hint">输出目录留空时保存到系统临时目录，可能被系统清理。重要作品请指定保存位置或另存副本。关闭网页不会退出后台；退出请回到启动窗口按 Ctrl+C。</p></details></div>
+    </section>
+  </div>
+  <footer><span>ImageVector</span><span>保留色彩，重构轮廓。</span></footer>
+</main>
+<dialog id="crop-dialog" aria-labelledby="crop-title" aria-describedby="crop-instructions">
+  <div class="crop-dialog-shell">
+    <div class="crop-dialog-heading">
+      <div><span class="crop-dialog-kicker">调整构图</span><h2 id="crop-title">裁剪图片</h2></div>
+      <button id="crop-close" class="crop-close-button" type="button" aria-label="取消并关闭裁剪">×</button>
+    </div>
+    <div class="crop-dialog-tools">
+      <label for="crop-preset">裁剪方式<select id="crop-preset">
+        <option value="free">自由比例</option><option value="16:9">16:9 横屏</option>
+        <option value="9:16">9:16 竖屏</option><option value="4:3">4:3 横幅</option>
+        <option value="3:4">3:4 竖幅</option><option value="1:1">1:1 方形</option>
+        <option value="custom">自定义比例</option>
+      </select></label>
+      <label id="custom-ratio-field" for="crop-custom-ratio" hidden>宽高比
+        <input id="crop-custom-ratio" type="text" value="5:4" maxlength="32" placeholder="例如 5:4 或 2.35:1" inputmode="text">
+      </label>
+      <button id="crop-reset" type="button">恢复完整原图</button>
+    </div>
+    <p id="crop-instructions">拖动四角调整大小，拖动选框移动位置。方向键移动选框；角点聚焦时调整大小，Shift 加快调整。</p>
+    <div id="crop-workspace">
+      <div id="crop-stage" hidden>
+        <img id="crop-source" alt="已按 EXIF 方向规范化的完整原图" draggable="false">
+        <div id="crop-frame" tabindex="0" aria-label="裁剪选框，可使用方向键移动">
+          <div class="crop-thirds" aria-hidden="true"></div>
+          <button type="button" class="crop-handle" data-crop-handle="nw" aria-label="调整左上角"></button>
+          <button type="button" class="crop-handle" data-crop-handle="ne" aria-label="调整右上角"></button>
+          <button type="button" class="crop-handle" data-crop-handle="sw" aria-label="调整左下角"></button>
+          <button type="button" class="crop-handle" data-crop-handle="se" aria-label="调整右下角"></button>
+        </div>
+      </div>
+      <p id="crop-loading" role="status">正在读取原图…</p>
+    </div>
+    <div class="crop-dialog-status"><output id="crop-size" aria-live="polite"></output><p id="crop-error" role="alert" hidden></p></div>
+    <div class="crop-dialog-footer"><span>应用后生效，取消保留原设置</span><div>
+      <button id="crop-cancel" type="button">取消</button><button id="crop-apply" type="button" class="primary">应用裁剪</button>
+    </div></div>
+  </div>
+</dialog>
+</body></html>
